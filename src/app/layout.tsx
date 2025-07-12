@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Charlene 2.0 - Philosophical Punk Rock Wisdom",
-  description: "Ask Charlene anything and be enlightened with philosophical punk rock wisdom!",
+  title: "Charlene 2.0 - So So Sophisticated",
+  description: "Ask Charlene anything and enjoy the elegance and sophistication!",
 };
 
 export default function RootLayout({

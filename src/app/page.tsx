@@ -79,22 +79,22 @@ function ChatInterface() {
           <div className="relative inline-block mb-4">
             <div className="relative">
               {/* AI Frame Animation */}
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-500 via-red-500 to-orange-500 ai-frame p-1">
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-rose-500 ai-frame p-1">
                 <div className="w-full h-full rounded-full bg-white dark:bg-gray-800"></div>
               </div>
               {/* Photo */}
               <img
-                src="https://media.licdn.com/dms/image/v2/C4D03AQF1Mfi_0GdEhw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1548318334512?e=1757548800&v=beta&t=BOlTV22C_QqufqsN6z1Pef3R-OmpK5IxmV8u97TgnQE"
-                alt="Jaco"
+                src="https://edenaltmu.com/wp-content/uploads/2020/03/IMG_2027-300x298.jpg"
+                alt="Charlene"
                 className="relative z-10 w-64 h-64 rounded-full object-cover border-4 border-white dark:border-gray-800 shadow-lg"
               />
               {/* Glow Effect */}
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-400/20 via-red-400/20 to-orange-400/20 blur-xl ai-glow"></div>
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-pink-400/20 via-purple-400/20 to-rose-400/20 blur-xl ai-glow"></div>
             </div>
           </div>
 
           <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-            Charlene 2.0 - Philosophical Punk Rock Wisdom
+            Charlene 2.0 - So So Sophisticated
           </h1>
         </div>
       </div>
@@ -107,7 +107,7 @@ function ChatInterface() {
             {messages.length === 0 && (
               <div className="text-center text-gray-500 dark:text-gray-400 mt-20 p-8">
                 <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
-                  Ask Jaco anything (especially legal advice) and be enlightened!
+                  Ask Charlene anything and enjoy the elegance and sophistication!
                 </p>
               </div>
             )}
@@ -120,7 +120,7 @@ function ChatInterface() {
                 <div
                   className={`max-w-[80%] rounded-2xl px-4 py-3 ${
                     message.role === 'user'
-                      ? 'bg-green-500 text-white'
+                      ? 'bg-pink-500 text-white'
                       : 'bg-white dark:bg-gray-800 text-gray-900 dark:text-white border border-gray-200 dark:border-gray-700'
                   }`}
                 >
@@ -128,7 +128,7 @@ function ChatInterface() {
                     {message.content}
                   </p>
                   <p className={`text-xs mt-2 ${
-                    message.role === 'user' ? 'text-green-100' : 'text-gray-500 dark:text-gray-400'
+                    message.role === 'user' ? 'text-pink-100' : 'text-gray-500 dark:text-gray-400'
                   }`}>
                     {message.timestamp.toLocaleTimeString()}
                   </p>
@@ -150,20 +150,20 @@ function ChatInterface() {
           </div>
 
           {/* Input Area */}
-          <div className="border-t border-green-200 dark:border-green-700 p-4 bg-green-50 dark:bg-green-900">
+          <div className="border-t border-pink-200 dark:border-pink-700 p-4 bg-pink-50 dark:bg-pink-900">
             <form onSubmit={handleSubmit} className="flex space-x-4">
               <input
                 type="text"
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
-                placeholder="Ask me anything..."
-                className="flex-1 px-4 py-3 border border-green-300 dark:border-green-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-green-800 dark:text-white bg-white"
+                placeholder="Tell me what's on your mind, boet..."
+                className="flex-1 px-4 py-3 border border-pink-300 dark:border-pink-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-500 dark:bg-pink-800 dark:text-white bg-white"
                 disabled={isLoading}
               />
               <button
                 type="submit"
                 disabled={isLoading || !inputValue.trim()}
-                className="px-6 py-3 bg-green-500 text-white rounded-xl hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                className="px-6 py-3 bg-pink-500 text-white rounded-xl hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-500 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
               >
                 {isLoading ? (
                   <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
