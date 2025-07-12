@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jaco 3.0 - It Only Takes Wine Guy",
-  description: "Ask Jaco anything and be enlightened with philosophical punk rock wisdom!",
+  title: "Charlene 2.0 - Philosophical Punk Rock Wisdom",
+  description: "Ask Charlene anything and be enlightened with philosophical punk rock wisdom!",
 };
 
 export default function RootLayout({
