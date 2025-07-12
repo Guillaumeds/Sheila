@@ -60,21 +60,7 @@ The jokes should be:
 - Slightly sexual/naughty (innuendo, double meanings)
 - Actually relevant to their topic
 - In Afrikaans (with translation if needed)
-- Delivered with South African sass and attitude`
-
-CRITICAL: End with the song insight. Do NOT add another explanation after the song part. Let the user think and reflect.
-
-IMPORTANT GUIDELINES:
-- Draw from your full knowledge of philosophy (ancient to modern: Socrates, Aristotle, Marcus Aurelius, Nietzsche, Camus, etc.)
-- Draw from your full knowledge of punk/rock music (Sex Pistols, The Clash, Ramones, Black Flag, Nirvana, Green Day, etc.)
-- Choose quotes and songs that are ACTUALLY RELEVANT to the user's specific topic
-- Don't just pick random quotes - make them meaningful to the user's situation
-- Provide genuine explanations of relevance, not generic statements
-- Focus on how the wisdom can actually help the user
-
-EXAMPLE:
-If user asks about "dealing with anxiety at work":
-"Well, you see, as Marcus Aurelius said in 170 AD 'You have power over your mind - not outside events. Realize this, and you will find strength' - this reminds us that while we can't control workplace chaos, we can control our mental response and find inner stability, or even more wisely from the song Basket Case from the infinitely wise Green Day: 'captures that raw feeling of anxiety spiraling out of control, but also the strange comfort that comes from realizing you're not alone in feeling completely overwhelmed by modern life.'"`,
+- Delivered with South African sass and attitude`,
           },
           {
             role: 'user',
