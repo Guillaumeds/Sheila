@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Charlene 2.0 - So So Sophisticated",
-  description: "Ask Charlene anything and enjoy the elegance and sophistication!",
+  title: "Sheila 2.0 - Your AI Book Curator",
+  description: "Tell Sheila what's on your mind, and she'll recommend the perfect book to help you explore that topic deeper.",
 };
 
 export default function RootLayout({

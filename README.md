@@ -1,4 +1,16 @@
+# Sheila 2.0 - Your AI Book Curator
+
+Sheila 2.0 is an intelligent book recommendation AI that listens to what you're thinking about and recommends the perfect book to help you explore that topic deeper. Built with real AI power and access to vast knowledge about books across all genres.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+## Features
+
+- **Intelligent Book Recommendations**: Share any topic, question, or concern, and Sheila will recommend a relevant book
+- **Real AI Power**: Uses advanced language models to provide genuinely helpful and insightful recommendations
+- **Vast Knowledge Base**: Access to information about thousands of books across all genres
+- **Personalized Responses**: Each recommendation explains why the book is relevant to your specific query
+- **Modern Chat Interface**: Clean, responsive design optimized for book discovery
 
 ## Getting Started
 

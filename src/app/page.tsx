@@ -70,32 +70,35 @@ function ChatInterface() {
 
   return (
     <div className="flex flex-col h-screen bg-gray-50 dark:bg-gray-900">
-      {/* Header with Jaco's Photo */}
+      {/* Header with Sheila's Photo */}
       <div className="flex-shrink-0 bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 px-4 py-6">
         <div className="max-w-4xl mx-auto text-center">
 
 
-          {/* Jaco's Photo with AI Frame */}
+          {/* Sheila's Photo with AI Frame */}
           <div className="relative inline-block mb-4">
             <div className="relative">
               {/* AI Frame Animation */}
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-rose-500 ai-frame p-1">
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 ai-frame p-1">
                 <div className="w-full h-full rounded-full bg-white dark:bg-gray-800"></div>
               </div>
               {/* Photo */}
               <img
-                src="https://edenaltmu.com/wp-content/uploads/2020/03/IMG_2027-300x298.jpg"
-                alt="Charlene"
+                src="https://media.licdn.com/dms/image/v2/D4E03AQEAhneeDRSwkA/profile-displayphoto-shrink_800_800/B4EZZomwBKH0Ac-/0/1745511713746?e=1758153600&v=beta&t=fSk5dXRyXzrTQO10YqUBNF0GoIM9bG1WtiaDL__HgjA"
+                alt="Sheila"
                 className="relative z-10 w-64 h-64 rounded-full object-cover border-4 border-white dark:border-gray-800 shadow-lg"
               />
               {/* Glow Effect */}
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-pink-400/20 via-purple-400/20 to-rose-400/20 blur-xl ai-glow"></div>
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-400/20 via-indigo-400/20 to-purple-400/20 blur-xl ai-glow"></div>
             </div>
           </div>
 
           <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-            Charlene 2.0 - So So Sophisticated
+            Sheila 2.0 - Your AI Book Curator
           </h1>
+          <p className="text-gray-600 dark:text-gray-300 text-sm">
+            Tell me what you're thinking about, and I'll find the perfect book for you
+          </p>
         </div>
       </div>
 
@@ -106,8 +109,17 @@ function ChatInterface() {
           <div className="flex-1 overflow-y-auto p-6 space-y-4">
             {messages.length === 0 && (
               <div className="text-center text-gray-500 dark:text-gray-400 mt-20 p-8">
-                <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
-                  Ask Charlene anything and enjoy the elegance and sophistication!
+                <div className="mb-6">
+                  <svg className="w-16 h-16 mx-auto mb-4 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </div>
+                <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed text-lg">
+                  Share what's on your mind, and I'll recommend the perfect book to help you explore that topic deeper.
+                  I search through vast knowledge to find books that will truly resonate with your interests and questions.
+                </p>
+                <p className="text-blue-500 dark:text-blue-400 mt-4 text-sm">
+                  📚 Ready to discover your next great read?
                 </p>
               </div>
             )}
@@ -120,7 +132,7 @@ function ChatInterface() {
                 <div
                   className={`max-w-[80%] rounded-2xl px-4 py-3 ${
                     message.role === 'user'
-                      ? 'bg-pink-500 text-white'
+                      ? 'bg-blue-500 text-white'
                       : 'bg-white dark:bg-gray-800 text-gray-900 dark:text-white border border-gray-200 dark:border-gray-700'
                   }`}
                 >
@@ -128,7 +140,7 @@ function ChatInterface() {
                     {message.content}
                   </p>
                   <p className={`text-xs mt-2 ${
-                    message.role === 'user' ? 'text-pink-100' : 'text-gray-500 dark:text-gray-400'
+                    message.role === 'user' ? 'text-blue-100' : 'text-gray-500 dark:text-gray-400'
                   }`}>
                     {message.timestamp.toLocaleTimeString()}
                   </p>
@@ -150,20 +162,20 @@ function ChatInterface() {
           </div>
 
           {/* Input Area */}
-          <div className="border-t border-pink-200 dark:border-pink-700 p-4 bg-pink-50 dark:bg-pink-900">
+          <div className="border-t border-blue-200 dark:border-blue-700 p-4 bg-blue-50 dark:bg-blue-900">
             <form onSubmit={handleSubmit} className="flex space-x-4">
               <input
                 type="text"
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
-                placeholder="Tell me what's on your mind, boet..."
-                className="flex-1 px-4 py-3 border border-pink-300 dark:border-pink-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-500 dark:bg-pink-800 dark:text-white bg-white"
+                placeholder="What topic or question is on your mind? I'll find the perfect book for you..."
+                className="flex-1 px-4 py-3 border border-blue-300 dark:border-blue-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-blue-800 dark:text-white bg-white"
                 disabled={isLoading}
               />
               <button
                 type="submit"
                 disabled={isLoading || !inputValue.trim()}
-                className="px-6 py-3 bg-pink-500 text-white rounded-xl hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-500 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                className="px-6 py-3 bg-blue-500 text-white rounded-xl hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
               >
                 {isLoading ? (
                   <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
