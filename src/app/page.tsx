@@ -94,10 +94,10 @@ function ChatInterface() {
           </div>
 
           <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-            Sheila 2.0 - Your AI Book Curator
+            Sheila 2.0
           </h1>
           <p className="text-gray-600 dark:text-gray-300 text-sm">
-            Tell me what you're thinking about, and I'll find the perfect book for you
+            How can I help you?
           </p>
         </div>
       </div>
