@@ -171,7 +171,7 @@ function ChatInterface() {
                 type="text"
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
-                placeholder="What topic or question is on your mind? I'll find the perfect book for you..."
+                placeholder="What do you have on your mind?"
                 className="flex-1 px-4 py-3 border border-blue-300 dark:border-blue-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-blue-800 dark:text-white bg-white"
                 disabled={isLoading}
               />
