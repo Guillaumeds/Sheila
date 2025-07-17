@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 interface Message {
   id: string;
@@ -83,9 +84,11 @@ function ChatInterface() {
                 <div className="w-full h-full rounded-full bg-white dark:bg-gray-800"></div>
               </div>
               {/* Photo */}
-              <img
+              <Image
                 src="https://media.licdn.com/dms/image/v2/D4E03AQEAhneeDRSwkA/profile-displayphoto-shrink_800_800/B4EZZomwBKH0Ac-/0/1745511713746?e=1758153600&v=beta&t=fSk5dXRyXzrTQO10YqUBNF0GoIM9bG1WtiaDL__HgjA"
                 alt="Sheila"
+                width={256}
+                height={256}
                 className="relative z-10 w-64 h-64 rounded-full object-cover border-4 border-white dark:border-gray-800 shadow-lg"
               />
               {/* Glow Effect */}
@@ -115,7 +118,7 @@ function ChatInterface() {
                   </svg>
                 </div>
                 <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed text-lg">
-                  Share what's on your mind, and I'll recommend the perfect book to help you explore that topic deeper.
+                  Share what&apos;s on your mind, and I&apos;ll recommend the perfect book to help you explore that topic deeper.
                   I search through vast knowledge to find books that will truly resonate with your interests and questions.
                 </p>
                 <p className="text-blue-500 dark:text-blue-400 mt-4 text-sm">
